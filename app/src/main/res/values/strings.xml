@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Disaster Chat</string>
+    <string name="bluetooth_not_supported">Bluetooth is not supported on this device</string>
+    <string name="bluetooth_not_enabled">Bluetooth must be enabled to use this app</string>
+    <string name="permission_required">Location permission is required for device discovery</string>
+    <string name="discovering_devices">Searching for nearby devices...</string>
+    <string name="device_connected">Connected to device</string>
+    <string name="device_disconnected">Connection lost</string>
+    <string name="sos_message">🚨 EMERGENCY SOS: I need immediate help! Please assist if you can.</string>
+    <string name="message_sent">Message sent</string>
+    <string name="no_connection">Not connected. Find devices first.</string>
+</resources>

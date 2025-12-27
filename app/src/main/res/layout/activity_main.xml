@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background_dark">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/emergency_red"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🚨 Disaster Chat"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disconnected"
+            android:textColor="@color/status_disconnected"
+            android:textSize="12sp"
+            android:background="@color/status_bg"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Messages List -->
+    <ListView
+        android:id="@+id/messages_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/chat_background"
+        android:divider="@null"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"/>
+
+    <!-- Input Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@color/input_background"
+        android:padding="8dp"
+        android:elevation="2dp">
+
+        <EditText
+            android:id="@+id/message_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type emergency message..."
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_color"
+            android:background="@color/input_field_bg"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"
+            android:inputType="textMultiLine"
+            android:maxLines="3"/>
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:backgroundTint="@color/send_button"
+            android:textColor="@color/white"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <!-- Control Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/discover_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🔍 Find Devices"
+            android:backgroundTint="@color/discover_button"
+            android:textColor="@color/white"
+            android:layout_marginEnd="4dp"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/sos_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🚨 EMERGENCY SOS"
+            android:backgroundTint="@color/sos_button"
+            android:textColor="@color/white"
+            android:layout_marginStart="4dp"
+            android:padding="12dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Status Bar -->
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap 'Find Devices' to connect with others nearby"
+        android:textColor="@color/info_text"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="@color/info_background"
+        android:gravity="center"/>
+
+</LinearLayout>

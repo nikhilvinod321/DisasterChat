@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main App Colors -->
+    <color name="background_dark">#1a1a1a</color>
+    <color name="emergency_red">#d32f2f</color>
+    <color name="white">#ffffff</color>
+
+    <!-- Status Colors -->
+    <color name="status_connected">#4CAF50</color>
+    <color name="status_disconnected">#FF5722</color>
+    <color name="status_bg">#33000000</color>
+
+    <!-- Chat Colors -->
+    <color name="chat_background">#2a2a2a</color>
+    <color name="input_background">#333333</color>
+    <color name="input_field_bg">#404040</color>
+    <color name="hint_color">#888888</color>
+
+    <!-- Button Colors -->
+    <color name="send_button">#2196F3</color>
+    <color name="discover_button">#FF9800</color>
+    <color name="sos_button">#f44336</color>
+
+    <!-- Info Colors -->
+    <color name="info_text">#bbbbbb</color>
+    <color name="info_background">#262626</color>
+</resources>
